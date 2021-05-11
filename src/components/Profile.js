@@ -1,5 +1,7 @@
 import React from "react";
 import profilePic from "../img/avatar.jpg";
+import IconButton from "@material-ui/core/IconButton";
+import Tooltip from "@material-ui/core/Tooltip";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -30,30 +32,52 @@ const Profile = () => {
         class="mt-2 d-flex flex-row align-items-center"
         style={{ color: "gray" }}
       >
-        <FacebookIcon
-          className="icon"
-          onClick={(e) =>
-            window.open("https://www.facebook.com/danny.catacora", "_blank")
-          }
-        />
-        <TwitterIcon
-          className="icon"
-          onClick={(e) =>
-            window.open("https://twitter.com/lucataco93", "_blank")
-          }
-        />
-        <LinkedInIcon
-          className="icon"
-          onClick={(e) =>
-            window.open("https://www.linkedin.com/in/lucataco", "_blank")
-          }
-        />
-        <PaymentIcon
-          className="icon"
-          onClick={(e) => window.open("https://paypal.me/lucataco", "_blank")}
-        />
-        <EmailIcon className="icon" label="mailto:lucataco@umd.edu" />
-        <AssignmentIcon onClick={(e) => window.open(Pdf)}></AssignmentIcon>
+        <Tooltip title="facebook">
+          <IconButton aria-label="facebook">
+            <FacebookIcon
+              onClick={(e) =>
+                window.open("https://www.facebook.com/danny.catacora", "_blank")
+              }
+            />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="twitter">
+          <IconButton aria-label="twitter">
+            <TwitterIcon
+              onClick={(e) =>
+                window.open("https://twitter.com/lucataco93", "_blank")
+              }
+            />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="linkedIn">
+          <IconButton aria-label="linkedIn">
+            <LinkedInIcon
+              onClick={(e) =>
+                window.open("https://www.linkedin.com/in/lucataco", "_blank")
+              }
+            />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="paypal">
+          <IconButton aria-label="paypal">
+            <PaymentIcon
+              onClick={(e) =>
+                window.open("https://paypal.me/lucataco", "_blank")
+              }
+            />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="resume">
+          <IconButton aria-label="resume">
+            <AssignmentIcon onClick={(e) => window.open(Pdf)}></AssignmentIcon>
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="email">
+          <IconButton aria-label="email">
+            <EmailIcon href="mailto:lucataco@umd.edu" />
+          </IconButton>
+        </Tooltip>
       </div>
     </div>
   );
