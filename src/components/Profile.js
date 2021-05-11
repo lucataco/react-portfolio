@@ -1,10 +1,13 @@
 import React from "react";
 import profilePic from "../img/avatar.jpg";
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import EmailIcon from '@material-ui/icons/Email';
-import AssignmentIcon from '@material-ui/icons/Assignment';
+import FacebookIcon from "@material-ui/icons/Facebook";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
+import AssignmentIcon from "@material-ui/icons/Assignment";
+import PaymentIcon from "@material-ui/icons/Payment";
+import Pdf from "../docs/resume.pdf";
+import "../App.css";
 
 const Profile = () => {
   return (
@@ -21,17 +24,36 @@ const Profile = () => {
         }}
       />
       <h2>Luis D Catacora</h2>
-      <p style={{ fontSize: 11, color: 'gray' }}>Computer Engineer</p>
+      <p style={{ fontSize: 11, color: "gray" }}>Computer Engineer</p>
       <div
         className="socialMediaButtons"
         class="mt-2 d-flex flex-row align-items-center"
-        style={{ color: 'gray' }}
+        style={{ color: "gray" }}
       >
-        <FacebookIcon onClick={e => window.location.href='https://www.facebook.com/danny.catacora'} />
-        <TwitterIcon onClick={e => window.location.href='https://twitter.com/lucataco93'}/>
-        <LinkedInIcon onClick={e => window.location.href='https://www.linkedin.com/in/lucataco'}/>
-        <EmailIcon />
-        <AssignmentIcon onClick={e => window.location.href='./resume.pdf'}/>
+        <FacebookIcon
+          className="icon"
+          onClick={(e) =>
+            window.open("https://www.facebook.com/danny.catacora", "_blank")
+          }
+        />
+        <TwitterIcon
+          className="icon"
+          onClick={(e) =>
+            window.open("https://twitter.com/lucataco93", "_blank")
+          }
+        />
+        <LinkedInIcon
+          className="icon"
+          onClick={(e) =>
+            window.open("https://www.linkedin.com/in/lucataco", "_blank")
+          }
+        />
+        <PaymentIcon
+          className="icon"
+          onClick={(e) => window.open("https://paypal.me/lucataco", "_blank")}
+        />
+        <EmailIcon className="icon" label="mailto:lucataco@umd.edu" />
+        <AssignmentIcon onClick={(e) => window.open(Pdf)}></AssignmentIcon>
       </div>
     </div>
   );
