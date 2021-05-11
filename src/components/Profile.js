@@ -28,8 +28,7 @@ const Profile = () => {
       <h2>Luis D Catacora</h2>
       <p style={{ fontSize: 11, color: "gray" }}>Computer Engineer</p>
       <div
-        className="socialMediaButtons"
-        class="mt-2 d-flex flex-row align-items-center"
+        className="socialMediaButtons mt-2 d-flex flex-row align-items-center"
         style={{ color: "gray" }}
       >
         <Tooltip title="facebook">
