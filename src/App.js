@@ -15,7 +15,7 @@ function App() {
         <Profile />
       </div>
       <div className="footer" style={{ fontSize: 11, color: "gray" }}>
-        &copy; 2021 @ Luis Catacora
+        &copy; 2022 @ Luis Catacora
       </div>
     </div>
   );
