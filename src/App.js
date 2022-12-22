@@ -9,8 +9,14 @@ function App() {
       <div className="main-info">
         <Profile />
       </div>
-      <div className="footer" style={{ fontSize: 11, color: "gray" }}>
-        &copy; 2022 @ Luis Catacora
+      <div className="footer" style={{ fontSize: 14, color: "gray" }}>
+        {/* <p style={{ fontStyle: "italic" }}>me@lucataco.com</p> */}
+        <p>
+          &copy; 2022{" "}
+          <a href="https://catacolabs.com" target="_blank">
+            CatacoLabs
+          </a>
+        </p>
       </div>
       <Analytics />
     </div>
