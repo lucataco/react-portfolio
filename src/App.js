@@ -12,7 +12,7 @@ function App() {
       <div className="footer" style={{ fontSize: 14, color: "gray" }}>
         {/* <p style={{ fontStyle: "italic" }}>me@lucataco.com</p> */}
         <p>
-          &copy; 2022{" "}
+          &copy; 2023{" "}
           <a href="https://catacolabs.com" target="_blank">
             CatacoLabs
           </a>
