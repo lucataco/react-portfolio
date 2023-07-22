@@ -2,7 +2,7 @@ import React from "react";
 import profilePic from "../img/avatar.jpg";
 import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
-import FacebookIcon from "@material-ui/icons/Facebook";
+import GithubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
@@ -34,11 +34,11 @@ const Profile = () => {
         className="socialMediaButtons mt-2 d-flex flex-row align-items-center"
         style={{ color: "gray" }}
       >
-        <Tooltip title="facebook">
-          <IconButton aria-label="facebook">
-            <FacebookIcon
+        <Tooltip title="github">
+          <IconButton aria-label="github">
+            <GithubIcon
               onClick={(e) =>
-                window.open("https://www.facebook.com/danny.catacora", "_blank")
+                window.open("https://github.com/lucataco/", "_blank")
               }
             />
           </IconButton>
